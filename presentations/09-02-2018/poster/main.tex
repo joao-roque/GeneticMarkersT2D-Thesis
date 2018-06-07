@@ -1,0 +1,223 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% MUW Poster
+% LaTeX Template
+% Version 1.0 (31/08/2016)
+% (Based on Version 1.0 (31/08/2015) of the Jacobs Portrait Poster
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Created by:
+% Nicolas Ballarini, CeMSIIS, Medical University of Vienna
+% nicoballarini@gmail.com
+% http://statistics.msi.meduniwien.ac.at/
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\def\footer#1{\def\insertfooter{#1}}
+%--------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%--------------------------------------------------------------------------------------
+
+\documentclass[final]{beamer}
+
+\usepackage[scale=1.150]{beamerposter} % Use the beamerposter package
+\usetheme{MUWposter} % Use the MUWposter theme supplied with this template
+
+% Include a logo of your project if desired
+%\logo{\pgfputat{\pgfxy(-13,109.1)}{\pgfbox[center,base]{\includegraphics[width=15cm]{logoBiocant.jpg}}}} 
+
+%\logo{\pgfputat{\pgfxy(-11,107)}{\pgfbox[center,base]{\includegraphics[width=7cm]{ProjectLogo.png}}}}  
+%\usepackage[sorting=none]{biblatex}
+\usepackage{multicol}
+\usepackage{array}
+%The following two are column definitions for the aknowledgements section
+\newcolumntype{L}{>{\arraybackslash}m{22cm}}
+\newcolumntype{S}{>{\arraybackslash}m{5cm}}
+\usepackage{pgf}  
+\usepackage{mathtools}
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+\usepackage{exscale}
+\usepackage{xcolor}
+\usepackage{ushort}
+\usepackage{setspace}
+\usepackage[square,numbers]{natbib}
+\usepackage{url}
+\bibliographystyle{ieeetr}
+\renewcommand{\vec}[1]{\ushort{#1}}
+\renewcommand{\vec}[1]{\mathbf{#1}}
+\definecolor{greenMUW}{RGB}{60,191,174}
+\definecolor{blueMUW}{RGB}{17,29,79}
+\definecolor{skinMUW}{RGB}{254,228,217}
+\definecolor{hellblauMUW}{RGB}{95,180,229}
+\usepackage[export]{adjustbox}
+
+%-----------------------------------------------
+%  START Set the colors
+%  Uncomment to apply colors you want to use.
+%-----------------------------------------------
+%%\colorlet{themecolor}{greenMUW}
+%%\usebackgroundtemplate{\includegraphics{MUW_green.pdf}}
+
+%\colorlet{themecolor}{skinMUW}
+%\colorlet{themecolor}{blueMUW}
+%\usebackgroundtemplate{\includegraphics{MUW_skin.pdf}}
+
+\colorlet{themecolor}{blueMUW}
+\colorlet{themecolor}{hellblauMUW}
+\usebackgroundtemplate{\includegraphics{MUW_hellblau_001.pdf}}
+%-----------------------------------------------
+%  END Set the colors
+%-----------------------------------------------
+
+
+%-----------------------------------------------
+%  START Set the width of the columns
+%-----------------------------------------------
+\setlength{\paperwidth}{33.1in} % A0 width: 46.8in
+\setlength{\paperheight}{46.8in} % A0 height: 33.1in
+\newlength{\sepmargin}
+\newlength{\sepwid}
+\newlength{\onecolwid}
+\newlength{\twocolwid}
+\newlength{\threecolwid}
+
+% The following measures are used for 2 columns
+\setlength{\sepmargin}{0.055\paperwidth} % Separation width (white space) between columns
+\setlength{\sepwid}{0.03\paperwidth} % Separation width (white space) between columns
+\setlength{\onecolwid}{0.43\paperwidth} % Width of one column
+\setlength{\twocolwid}{0.9\paperwidth} % Width of two columns
+
+%-----------------------------------------------------------
+% The following measures are used for 3 columns
+%\setlength{\sepmargin}{0.06\paperwidth} % Separation width (white space) between columns
+%\setlength{\sepwid}{0.02\paperwidth} % Separation width (white space) between columns
+%\setlength{\onecolwid}{0.28\paperwidth} % Width of one column
+%\setlength{\twocolwid}{0.58\paperwidth} % Width of two columns
+%\setlength{\threecolwid}{0.88\paperwidth} % Width of three columns
+%\setlength{\columnsep}{30pt}
+
+%-----------------------------------------------
+%  END Set the width of the columns
+%-----------------------------------------------
+
+
+%--------------------------------------------------------------------------------------
+%	TITLE SECTION 
+%--------------------------------------------------------------------------------------
+\setbeamertemplate{title}[left]
+\setbeamertemplate{frametitle}[default][left]
+%\setmainfont{Georgia}
+
+% Genome Wide Association Study to uncover Genetic Markers for Type 2 Diabetes
+\title{Computational Discovery of Genetic Markers for Type 2 Diabetes} % Poster title
+
+\author{João Roque\textsuperscript{1}, Conceição Egas\textsuperscript{2}, Joel P. Arrais\textsuperscript{3}} % Author(s)
+
+\institute{\textsuperscript{1}Physics Department and \textsuperscript{3}Informatics Engineering Department of the Faculty of Science and Technology of the University of Coimbra, Portugal\\\textsuperscript{2}UC-BIOTECH} % Institution(s)
+%--------------------------------------------------------------------------------------
+\begin{document}
+  \addtobeamertemplate{block end}{}{\vspace*{1ex}} % White space under blocks
+  \addtobeamertemplate{block alerted end}{}{\vspace*{0ex}} % White space under highlighted (alert) blocks
+  \setlength{\belowcaptionskip}{2ex} % White space under figures
+  \setlength\belowdisplayshortskip{1ex} % White space under equations
+  \begin{frame}[t] % The whole poster is enclosed in one beamer frame
+      \begin{columns}[t] % The whole poster consists of two major columns
+      \begin{column}{\sepmargin}\end{column}
+	    \begin{column}{\onecolwid} % The first column
+		  \begin{block}{Introduction}
+This project is being performed in the Laboratory of Neural Networks in the Department of Informatics Engineering, with the guidance of Joel P. Arrais and support of Conceição Egas from UC-BIOTECH.\\
+Type 2 Diabetes is one of the most common diseases encountered in the world, and the fifth leading cause of death worldwide. There is evidence supporting that T2D is strongly influenced by genetic and epigenetic factors, as well as environmental ones\cite{prasad2015genetics}. Therefore, with careful examination of genetic variants it is possible to find associations between genotypes and phenotypes. The most commonly used variants are Single Nucleotide Polymorphisms (SNP), which are single nucleotide variations that occur in a specific position in the genome\cite{fuchsberger2016genetic}. Considering SNPs, allele frequencies, Linkage Disequilibrium and even other types of variants such as Copy Number Variations as features, machine learning methods can be used to discover this association.
+%There are other features available as well, such as allele frequencies and Linkage Disequilibrium, and even other forms of variants, such as Copy Number Variations.
+%To do so, computational methods such has Machine Learning, Dimensionality Reduction etc. are used.
+ %These can either be common or rare, depending on their allele frequency.\cite{fuchsberger2016genetic} %If the minor allele occurs in less than 5\% of the population, it is considered rare, and vice-versa.\cite{zhang2012mining}
+ \begin{figure}
+   \includegraphics[width=1\linewidth]{gwas2v2.png}
+ \end{figure}
+          	\begin{figure}
+  \includegraphics[width=1\linewidth]{LD.PNG}
+                \caption{\textbf{Top:} Process of a Genome Wide Association Study: from a population, the genome of each person is collected, for control and study groups. Then, computational and statistical methods are applied to find the proper markers with association to the target phenotype.\\ \textbf{Bottom:} Association between allele frequencies and their effect on phenotype. Mendelian disorders are associated with extremely rare SNPs with large effects, but T2D is mostly associated with common SNPs with small additive effects\cite{bush2012genome}.}                
+                %Genotyped SNPs often lie in a region of high linkage disequilibrium with an influential allele andcan be statistically associated with a disease SNP indirectly\cite{bush2012genome}.} 
+                %Association between allele frequencies and their effect on phenotype. Mendelian disorders are associated with extremely rare SNPs with large effects, but T2D is mostly associated with common SNPs with small additive effects.\cite{bush2012genome}}
+			\end{figure}  		  
+          So far, for T2D, more than 80 robust markers were found, even though they only account for 20\% of the heritability for this disease, which is also known as the missing heritability problem\cite{fuchsberger2016genetic}.
+          \end{block}
+         \end{column}
+         
+         \begin{column}{\sepwid}  \end{column}
+
+         \begin{column}{\onecolwid} %The second column
+         \vspace{-0.5cm}
+          \begin{block}{Objectives}
+           The objective of this work is to apply computational methods to perform a Genome Wide Association Study. The goals are to discover new and relevant genetic markers from Single Nucleotide Polymorphisms datasets for T2D, and to uncover the missing heritability problem that haunts complex diseases since fast sequencing techniques emerged.      
+         \end{block}
+         
+         \begin{block}{Challenges}
+          There are around 10 million SNPs in the human genome that can be associated with numerous traits and diseases. For T2D, the markers discovered are predominantly common (present in great part of the population) with additive effects, which makes their detection among millions of other variants an extremely hard problem. Most datasets contain 200,000 to 2 million SNPs because only high-end sequencers target the whole genome.  
+Missing data needs to be imputed with the 1000 Genome Project\cite{10002012integrated}, and association techniques using Linkage Disequilibrium are required to overcome the missing data problem. 
+% 				\begin{figure}
+%                     \includegraphics[width=.9\linewidth]{LD.PNG}                
+%                     \caption{Genotyped SNPs often lie in a region of high linkage disequilibrium with an influential allele. The genotyped SNP
+% can be statistically associated with disease as a surrogate for the disease SNP through an indirect association\cite{bush2012genome}.}
+% 				\end{figure}              
+          Furthermore, these are issues that exist already when considering only a Single-Locus Analysis, which focus on each SNP statistical association with the phenotype. When trying to account for Epistasis or gene-gene interactions, the problem becomes even more so statistically and computationally complex, requiring extensive feature selection and attention to not lose understanding of the biological context of each variant. 
+          %\end{multicols}
+          \end{block}
+                    
+          \begin{block}{Expected Results}
+				It is expected to find a statistical association between the known markers and T2D in the dataset provided, as well as finding novel methodologies to perform Multi-Locus analysis in a feasible time set.
+                %, using Bayesian, Machine Learning and Dimensionality Reduction methods.
+				\begin{figure}
+                    \includegraphics[width=1\linewidth]{markers.PNG}                     			\caption{a, b, Manhattan plots of single-variant association analyses for: sequence
+data alone (a, 1,326 cases and 1,331 controls) and meta-analysis of
+sequence and imputed data (b, total of 14,297 cases and 32,774 controls).
+1000G, the 1000 Genomes Project data\cite{fuchsberger2016genetic, 10002012integrated}.}
+				\end{figure}
+             Validation of new methods that predict T2D risk are performed with different public datasets. These will be of European populations, such as the original one. Besides these, any new markers discovered will be extensively studied and validated, to add to the explanation of missing heritability.
+             \end{block}
+%           \begin{block}{Conclusion}
+          
+%             In recent years, Genome Wide Association Studies played a big part in uncovering the underlying genetics for many diseases and physical traits. By making use of recent efforts such as the 1000 Genome Project and employing new state of the art computational methods, it will be possible to better identify disease risk and understand the heritability of complex diseases.
+%           \end{block}
+      \end{column}
+      \begin{column}{\sepmargin} \end{column}
+      \end{columns} 
+       
+      \begin{columns}[t] % Split up the two columns wide column again
+      
+      \begin{column}{\sepmargin} \end{column}
+        \begin{column}{\onecolwid} % The first column
+			\begin{block}{\large Acknowledgements}
+            
+            %\begin{figure}[h]
+              \vspace{0.3in}
+              \includegraphics[width=0.2\textwidth]{FCT.png}
+              \begin{minipage}{0.65\textwidth} % choose width suitably
+                \footnotesize financed by national funding via the Foundation for Science and Technology and by the European Regional Development Fund (FEDER), through the COMPETE 2020 – Operational Program for Competitiveness and Internationalization (POCI)
+               \end{minipage}
+           
+                   \begin{tabular}{SL}                    	                        			 	\includegraphics[width=8in]{FCT2.png}
+                   %\includegraphics[width=3.5in]{logoBiocant.jpg}
+                   \end{tabular}
+				\end{block}	
+               
+		    \end{column} % End of the first column
+			\begin{column}{\sepwid}\end{column} % Empty spacer column
+			\begin{column}{\onecolwid} % Begin a column 
+              \begin{block}{\large References}
+			  \vspace*{-0.5cm}
+              	%\nocite{*} % Insert publications even if they are not cited in the poster
+					{\footnotesize
+                %\bibliographystyle{ieeert}
+				\bibliography{references}}
+				\end{block} 
+			\end{column} % End of the second column
+            
+			\begin{column}{\sepmargin}\end{column} % Empty spacer column
+            
+\end{columns} % End of all the columns in the poster
+
+
+\end{frame} % End of the enclosing frame
+	
+\end{document}

@@ -1,0 +1,120 @@
+\ifglsentryexists{led}{}%
+{%
+\gls@defglossaryentry{led}%
+{%
+name={LED},%
+sort={LED},%
+type={acronym},%
+first={light-emitting diode\glsspace (LED)},%
+firstplural={light-emitting diodes\glsspace (LEDs)},%
+text={LED},%
+plural={LEDs},%
+description={light-emitting diode},%
+descriptionplural={light-emitting diode\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={light-emitting diode},%
+longplural={light-emitting diodes},%
+short={LED},%
+shortplural={LEDs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{eeprom}{}%
+{%
+\gls@defglossaryentry{eeprom}%
+{%
+name={EEPROM},%
+sort={EEPROM},%
+type={acronym},%
+first={electrically erasable programmable read-only memory\glsspace (EEPROM)},%
+firstplural={electrically erasable programmable read-only memorys\glsspace (EEPROMs)},%
+text={EEPROM},%
+plural={EEPROMs},%
+description={electrically erasable programmable read-only memory},%
+descriptionplural={electrically erasable programmable read-only memory\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={electrically erasable programmable read-only memory},%
+longplural={electrically erasable programmable read-only memorys},%
+short={EEPROM},%
+shortplural={EEPROMs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{angstrom}{}%
+{%
+\gls@defglossaryentry{angstrom}%
+{%
+name={{\aa }ngstr\"om},%
+sort={angstrom},%
+type={symbols},%
+first={{\r a}ngstr\"om},%
+firstplural={{\r a}ngstr\"oms},%
+text={{\r a}ngstr\"om},%
+plural={{\r a}ngstr\"oms},%
+description={non-SI unit of length},%
+descriptionplural={non-SI unit of length},%
+symbol={\AA },%
+symbolplural={\AA },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ohm}{}%
+{%
+\gls@defglossaryentry{ohm}%
+{%
+name={ohm},%
+sort={ohm},%
+type={symbols},%
+first={ohm},%
+firstplural={ohms},%
+text={ohm},%
+plural={ohms},%
+description={unit of electrical resistance},%
+descriptionplural={unit of electrical resistance},%
+symbol={\ensuremath {\Omega }},%
+symbolplural={\ensuremath {\Omega }},%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%

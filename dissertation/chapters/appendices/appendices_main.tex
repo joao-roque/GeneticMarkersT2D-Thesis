@@ -1,0 +1,26 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+\begin{appendices}
+\addtocontents{toc}{\protect\setcounter{tocdepth}{1}}
+\makeatletter
+\addtocontents{toc}{%
+  \begingroup
+  \let\protect\l@chapter\protect\l@section
+  \let\protect\l@section\protect\l@subsection
+}
+\makeatother
+  \chapter{First appendix}
+  	\section{First section}
+  		\lipsum
+  	\section{Second section}
+  		\lipsum
+
+  \chapter{Second appendix}
+  	\section{First section}
+  		\lipsum
+  	\section{Second section}
+  		\lipsum
+  		
+\addtocontents{toc}{\endgroup}
+\end{appendices}

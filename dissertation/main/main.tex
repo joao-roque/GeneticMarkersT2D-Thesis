@@ -1,0 +1,85 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% IMPORT SETTINGS
+\documentclass[12pt,a4paper,twoside,openright]{report}
+\input{../include/settings.tex}
+
+% Documents' beginning
+\begin{document}
+
+\pagenumbering{roman}
+\setcounter{page}{0}
+
+% TITLE PAGE
+\input{../include/title_page.tex}
+
+% ENTITIES
+\input{../include/empty_page.tex}
+\input{../include/entities.tex}
+
+% COPYRIGHT
+\input{../include/empty_page.tex}
+\input{../include/copyright.tex}
+
+% DEDICATION [OPTIONAL]
+% \input{../include/empty_page.tex}
+% \input{../include/dedication.tex}
+
+% ACKNOWLEDGMENTS [OPTIONAL]
+\input{../include/empty_page.tex}
+\input{../include/acknowledgments.tex}
+
+% FINANCING [IF APPLIABLE]
+% \input{../include/empty_page.tex}
+% \input{../include/financing.tex}
+
+% EPIGRAPH [OPTIONAL]
+% \input{../include/empty_page.tex}
+% \input{../include/epigraph.tex}
+
+% RESUMO
+\input{../include/empty_page.tex}
+\input{../abstract/abstract_pt.tex}
+
+% ABSTRACT
+\input{../abstract/abstract_en.tex}
+
+%\begin{spacing}{1} % change vertical space between toc, lof, lot and glossaries entries
+\printglossaries
+\listoffigures
+\listoftables
+\tableofcontents
+%\end{spacing}
+
+
+% INTRODUCTION
+\input{../chapters/introduction/introduction_main.tex}
+
+%STATE OF THE ART
+\input{../chapters/stateoftheart/sota_main.tex}
+
+% METHODS
+\input{../chapters/methods/methods_main.tex}
+
+% RESULTS
+\input{../chapters/results/results_main.tex}
+
+% CONCLUSION
+\input{../chapters/conclusion/conclusion_main.tex}
+
+% REFERENCES / BIBLIOGRAPHY
+\cleardoublepage
+\bibliographystyle{ieeetr}
+\bibliography{../references/references}
+
+% INDEX [OPTIONAL]
+% Each time you want to add an entry to index you need to use \index{text}
+\newpage\null\newpage
+\printindex
+
+% APPENDICES [OPTIONAL]
+\newpage\null\newpage
+\input{../chapters/appendices/appendices_main.tex}
+
+\end{document}

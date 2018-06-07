@@ -1,0 +1,186 @@
+******************************************
+************** To Remember ***************
+******************************************
+
+          Task name     |  Start Date | End Date |  Details
+
+* Download datasets     |    19/02    |    ---   |  - Download of 1000 Genomes (control)
+                                      							- More samples from: http://portals.broadinstitute.org/collaboration/giant/index.php/GIANT_consortium_data_files , include cite Turcot V, Lu Y, Highland HM, Schurmann C, Justice AE, Fine RS, Bradfield JP, Esko T, Giri A, Graff M, Guo X, Hendricks AE, et al. (2018) ---> Only results, no real data (for meta-analysis, which means it's not useful)
+                                      							- Contacting GoT2D x
+                                                    - Ask here: t2dgenes-got2d-dac@broadinstitute.org
+                                                    - https://www.ebi.ac.uk/ega/datasets/EGAD00001002247
+                                                    - WTCCC: https://www.wtccc.org.uk/info/access_to_data_samples.html , 
+                                                    at: https://www.sanger.ac.uk/legal/DAA/MasterController
+
+* Data load             |    19/02    |   19/02  |  - VCF to csv parser complete
+
+* Data Imputation       |     ----	  |   ----   |  - Need more case data to perform imputation
+													                          - It requires AF to perform properly (to calculate r^2)
+                                                    - Can perform imputation for some variants, but it might bias the study (will try with both datasets)
+
+* Clean dataset 	      |    26/02    |	  26/02	 |  - Cleaning performed on non-imputed data
+  for ML use 										                     
+
+* Obtain required SNP's |    01/03	  |	  14/03  |  - Control data from 1000 Genomes
+  from control data                                 - Some troubles handling files because of memory
+                                                    - Running... 24h++
+
+* Validate VCF quality  |	   12/03    |	  14/03  |  - https://github.com/Illumina/hap.py - Running with Docker 
+  (including controls)                              - sudo docker run -ti -v /home/student/GitHub:/data --rm f69ea1624f20 bin/bash  
+                                                    - f69ea1624f20 - see hap.py image (sudo docker images)
+
+                                                    - Run:
+                                                    - $ export HGREF=/data/LocalData/GoldStandard/hg19.fa  (this was found at: http://hgdownload.cse.ucsc.edu/goldenPath/hg19/bigZips/chromFa.tar.gz --> extract and: $ cat chr*.fa > hg19.fa , $ bwa index -a bwtsw hg19.fa)
+                                                    - VCF header must be properly built
+                                                    - $ python /opt/hap.py/bin/hap.py /data/LocalData/GoldStandard/platinum-genomesNA12878_S1.genome.vcf /data/GeneticMarkersT2D/data/merge.vcf.gz -o /data/LocalData/happy_test 
+
+                                                    - Validate imputed data, if imputation is performed (don't have enough data to perform it yet)
+                                                    - Using Platinum Genomes as Gold Standard - https://console.cloud.google.com/storage/browser/genomics-public-data/platinum-genomes/?hl=pt-br
+                                                    
+* Control files parsing |    14/03    |   19/03  |  - All on parser.py
+
+* Analysis of dataset   |  	 27/02	  |    ----  |  - So far: 20% missing data -_- (cases)
+
+* Make dataset with only|	 ----       |	   ----  |  - Might not be worth doing (controls and cases histograms look similar)
+  homozygous/heterozygous
+
+* Convert all datasets  |	 07/03      |	  07/03  |  - Parsing pipeline already reads/outputs gzips
+  to gzips                                          - Slower to read, but optimizes space
+
+* Complete VCF header   |    14/03    |   14/03  |  - To verify vcf quality against gold-standard, hap.py requires a complete VCF header
+                                                    - https://samtools.github.io/hts-specs/VCFv4.1.pdf
+                                                    - Made with cleanvcf.py
+
+* Start simple stats    |  		      |          |  - Where to start on feature selection
+  with only 250k SNP's
+
+* Ideas (studying       |    19/03    |   ----   |  - What and how to perform:
+  feature selection)                                - Use known variants
+                                                    - Feature Construction (to consider interdependence of features)
+                                                    - Neighborhood Entropy based Cooperative Game Theory
+
+* Selecting European/   |    20/03    |   20/03  |  - As per: http://www.internationalgenome.org/data-portal/sample
+  Spanish samples
+
+* Feature Selection tasks:
+    -> Using known variants  |    20/03    |   22/03  |  - https://stackoverflow.com/questions/20251612/map-snp-ids-to-genome-coordinates
+                                                         - Based on these variants: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5337961/pdf/srep43709.pdf
+                                                         - For each known variant, find 10 closest variants in LD (r²>0.5)
+                                                         - This might introduce bias, because we are using only known   information, and not finding new one
+                                                         - Doesn't necessarly mean that they will predict diabetes
+
+    -> Find nearest variants |    22/03    |   03/04  |  - Can't find variants or close enough variants on dataset...
+       in LD    
+
+    -> Interdependence of    |    27/03    |   03/04  |  - https://en.wikipedia.org/wiki/Mutual_information
+       features                                          - 
+                                                         - Odds Ratio
+
+    -> Deal with missing data|    05/04    |   05/04  |  - Starting with Random Forest inbedded way of dealing with missing data
+                                                         - As a first approach, I deletes columns with more than 10% missing data
+                                                           and imputed the rest with the most frequent value in the column 
+
+* Make assumption guide |            |          |  - What assumptions or biases am I taking for each step
+  at each step
+
+* Random Forest with all|   04/04    |   05/04  |  - Deleted variants with more than 10% data and let RF handle the rest
+  samples                                          - 266 687 features before removing 10% ++
+                                                   - Imputed with most frequent
+                                                   
+* Find variants that    |   06/04    |   09/04  |  - Several variants appear very often (50% >)
+  usually contribute more 
+  to the model 
+
+* Measure LD between    |   13/04    |   13/04  |  - Used X² or T.E.Fishher signed rank test between variant and labels
+                                                   - LD between variants
+                                                   - These tests are on data/tests/LD_and_wilcoxon
+
+* IMPORTANT webinar     |   09/04    |   09/04  |  - Interesting introduction points
+                                                   - review article: marullo
+
+* Plot frequencies for  |   09/04    |   10/04  |  - Plots in data/frequencies_of_variants
+aggregates of trees                                - When looking at this plot, what's important to note is that some variants
+                                                     have high frequencies across all runs, and others low frequencies across all runs. This shows that the important variants are constantly the same.
+
+* Make feature reduction|   17/04    |   17/04  |  - Make randomly removing vs removing important ones
+/accuracy reduction plot                           - Results in data/plots/accuracy_by_feature_reduction
+                                                   - The top 5 best features are enough to classify 
+                                                   - If less important features are used the accuracy drops significantly
+
+* Rank variables and \  |   10/04    |   10/04  |  - Same variables keep appearing at the top in independent runs
+ determine more important
+ ones
+
+* Make random Forest    |   13/04    |   13/04  |  - f1 = 1 for 1000 top samples
+with important variants                            
+
+* Make no. of trees vs  |   13/04    |   13/04  |  - Almost allways at 1
+accuracy plot
+
+* Run linear classifier |   17/04    |   17/04  |  - F1-score remains high even with only top 10 features
+with important variants
+
+* Find closest gene to  |   17/04    |   ----   |  - use https://www.biostars.org/p/111225/
+important variants
+
+* Find important gene   |   17/04    |   ----   |  - So far chr10:112572458, very close to 
+functions (gene ontology)                           http://www.type2diabetesgenetics.org/gene/geneInfo/TCF7L2
+                                                    which is a very important gene for T2D
+
+* Incorrect GT          |   18/04    |   18/04  |  - When a mistake was found on the conversion of GT to numbers it was only 
+  conversion (bug)                                   applied to cases, which lead to incorrect controls
+                                                   - there was also found mismatches between variants in controls/cases
+
+---------------- BREAK ---------------------------
+
+* Compare data/controls/|   14/05    |   15/05  |  - make sure that ref and alt match!
+final_controls_file.csv.gzips                      - taking a bit to process
+and data/cases/merge_uncleaned.csv.gz
+ (bug)
+
+* Correcting some tests |   14/05    |   14/05  |  - Added chi squared
+
+* Need to correct LD    |   15/05    |   15/05  |  - In feature_selection.py (solved)
+  formulas (bug)
+
+* Re run tests          |   15/05    |   16/05  |  - List of tests:
+                                                   * Convert controls to ML use *
+                                                   * Rerun controls + cases concatenation and cleaning (-missing) *
+                                                   * Imputation with most frequent *
+                                                   * See if it's possible to extract most important variants (classifiers.py -ranking) *
+                                                   * LD, X²(between variant and labels) and add Odds Ratio(between important variants) on feature_selection.py
+                                                   * frequencies of variants *
+                                                   * accuracy by no trees
+                                                   * accuracy by feature reduction (data/plots)
+
+* Remove top 200 	     |	   16/06   |	 16/05  |  - F1-scores droped to 0.8
+  features and re run
+
+* Produce and send file|		         |	        |  - https://vegas2.qimrberghofer.edu.au/
+  to vegas2           							               - VEGAS allows to find regions and top SNPs
+
+* Verify if data is in |		         |	        |  - For further validation
+Hardy-Weinberg Equilibrium  
+
+* Building model       |   20/05     |   23/05  |  - Top Genes extracted from: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3746083/
+                                                   - To compute LD https://rest.ensembl.org/ and http://www.ensembl.org/Homo_sapiens/Variation/HighLD?db=core;r=7:127081784-127082784;second_variant_name=rs2283095;v=rs2283094;vdb=variation;vf=1681934
+                                                   - Final data in: data/full_dataset/full_data_new_features.csv
+                                                   - Classifies with high f1-score
+
+* Improve classification|  23/05     |   29/05  |  - Improve results and gather visualizations
+												                           - top risk genes are GCK, ADAMTS9, NOTCH2, WFS1, THADA, ADCY5, KCNQ1
+                                                   - casos = 1, control = 0
+                                                   - top risk genes are FAM71E2, EVPLL, TAB3, GPC4, MAGEB3
+
+* Making genome viz's  |   07/06     |          |  - https://academic.oup.com/bioinformatics/article/33/3/432/2593901
+
+* Gather top genes data|             |          |  - 
+
+* Validation through   |             |          |  -
+  gene expression
+
+* Include plot of SVM  |             |          |  - 
+  and RF accuracies and
+  RF rules
+
+* Why Extra Trees ?    |             |          |  - https://www.quora.com/What-is-the-extra-trees-algorithm-in-machine-learning    

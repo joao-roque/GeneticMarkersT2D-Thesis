@@ -1,0 +1,6 @@
+O ficheiro que devem compilar encontra-se na pasta main e tem o nome main.tex
+
+Para a criação de um glossário e de uma lista de acrónimos automaticamente 
+é necessário utilizar o TexWorks (ainda não descobri outra maneira de fazer noutro software) e configurar o mesmo como descrito no link abaixo.
+
+http://www.latex-community.org/index.php?option=com_content&view=article&id=263%3Aglossaries-nomenclature-lists-of-symbols-and-acronyms&catid=55%3Alatex-general&Itemid=112

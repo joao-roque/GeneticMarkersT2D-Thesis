@@ -1,0 +1,87 @@
+% --------------------------------------------------------------
+% This is all preamble stuff that you don't have to worry about.
+% Head down to where it says "Start here"
+% --------------------------------------------------------------
+ 
+\documentclass[12pt]{article}
+ 
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+ 
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{reflection}[2][Reflection]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{proposition}[2][Proposition]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+ 
+\begin{document}
+ 
+% --------------------------------------------------------------
+%                         Start here
+% --------------------------------------------------------------
+ 
+%\renewcommand{\qedsymbol}{\filledbox}
+%\bibliographystyle{unsrt}
+\title{Presentation Structure}%replace X with the appropriate number
+\author{João Roque\\ %replace with your name
+Genetic Markers for T2D} %if necessary, replace with your course title
+ 
+\maketitle
+
+
+\textbf{T2D mechanism}
+\vspace{0.1in} \\
+\indent 
+In type 2 diabetes, a hormone called insulin cannot adequately control the use of sugar from food which leads to a build up of sugar in the blood. The incidence of diabetes is increasing because of the aging and changing ethnic mix of the population and because of worsening obesity. On the basis of current trends, the prevalence of diabetes is expected to nearly double by 2030 \cite{vijan2010type}. It is estimated that by 2013, 382 million people in the world lived with diabetes \cite{prasad2015genetics}. The causes of type 2 diabetes are complex. This condition results from a combination of genetic and lifestyle factors, some of which have not been identified. This makes it difficult to find specific variations on the genome that implicate risk of diabetes, since it's such a complex disease not yet fully understood. \\
+\indent 
+There are several different types of diabetes, but of those, T2D is the most prevalent. It is also the one which has proven itself to be the hardest to explain genetically. Our definition of diabetes and subgroups is imprecise and thereby makes the identification of genetics causes difficult. \\
+
+
+\textbf{Underlying Genetics}
+\vspace{0.1in} \\
+\indent 
+It is fairly well known that human phenotype and traits are mostly defined by single nucleotide polymorphisms. These single nucleotide variations can underlie differences in our susceptibility to disease.\\
+\indent 
+There is compelling evidence that the individual risk for T2D is strongly influenced by genetic and environmental factors \cite{mccarthy2009genome}. First degree relatives from one carrier of the disease, have up to 40\% chance to develop T2D sometime throughout their lifetimes, and 70\%, if both of the parents are carriers. This shows a certain degree of heritability, even though we don't entirely understand how this mechanism works for T2D . There seems to be no unique variants that are able to explain it, which only raises more questions \cite{prasad2015genetics}. Efforts to identify genetic risk markers have only seen limited success, both in common and rare variants of SNP's \cite{fuchsberger2016genetic}. So far, around 153 variants mapping up to 120 loci have shown, only explaining a small portion of the total heritability \cite{prasad2015genetics} . \\
+\indent 
+So, with evidence that T2D has at least a genetic component, what should we look for in the genome to identify it's risk? T2D is not our common genetic disease in which a find of a few markers can dictate high penetrance. With rare variants proving themselves not to be the key \cite{fuchsberger2016genetic}, it is required of recent searches to acknowledge the complexity of DNA, and include some aspects beyond linear correlation of SNP's. We must try and build models that account for epigenetics (DNA methylation), epistasis ( gene-gene interaction), both rare, common and protective variants, CNV's and so on \cite{prasad2015genetics}. \\
+
+
+\textbf{Genome Wide Association Studies \& Methods}
+\vspace{0.1in} \\
+\indent 
+When scientists started to get their hands on whole human genomes, to try and verify if it was possible to find traits of heritability and correlation for some diseases, genome wide association studies were made. GWAS are typically done by looking at the allele frequency for each SNP, and looking for alleles with higher frequency in the case group than the control. A Manhattan plot can be made to visualize these associations.\\
+\indent 
+Since in more complex diseases, such as T2D, this only seems to explain 5-10\% of heritability, models need to take into account the factors explained before ( epigenetics (DNA methylation), epistasis ( gene-gene interaction), both rare, common and protective variants, CNV's). To try and do this, we can use non-linear machine learning methods such has Random Forests or even deep learning \cite{moore2010bioinformatics}. Despite my best efforts, I couldn't find meaningful literature on deep learning applied to T2D. Nevertheless, the ones who have tried to do it in GWAS have seen drastic improvement in results, which might make it worth it to try out \cite{uppu2016towards}. Deep learning has the advantage of trying to find the best features in SNP's by itself, and being very widely used with good results. However, it is very computationally heavy and makes a complex network that is impossible to explain and interpret in a biological sense.  \\
+\indent 
+Before approaching such complex algorithms, it makes sense to approach the problem with a fresh look and find new features to improve simpler models (even though everything points towards non-linear models at least). Trying to include the factors referred before, can also prove itself to be useful. \\
+
+
+\textbf{Challenges}
+\vspace{0.1in} \\
+\indent 
+The first challenge that arises is the sheer difficulty of processing and building models that can process such vast quantities of data (there are around 10 million SNP's in the human genome). This vastly increases computing time, so it needs to be very well thought out and considered during the whole project. Even thinking of considering phenomenons such as epistatis need to take this issue into consideration. Secondly, comes trying to integrate gene-environment interaction on the model (if we even want to do it at all), since it's hard to gather data from each patient. Even though there are loads of data for each sample, the datasets needed to study these hypothesis should preferably include people's information (and genome) from different ethnic backgrounds, since it makes it simpler to identify common risk markers. Lastly, there is the problem of phantom heritability. Although studies have discovered <1,200 variants associated with common diseases and traits, these variants typically appear to explain only a minority of the heritability \cite{zuk2012mystery}.    
+
+
+%%\renewcommand\refname{Referências}
+\bibliography{bibTex_references}{}
+\bibliographystyle{plain}
+ 
+% --------------------------------------------------------------
+%     You don't have to mess with anything below this line.
+% --------------------------------------------------------------
+ 
+\end{document}
