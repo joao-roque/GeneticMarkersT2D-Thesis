@@ -5,8 +5,12 @@
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 \usepackage[pdftex]{hyperref}
-\usepackage[acronym,toc,style=tree,nonumberlist]{glossaries}
+%\usepackage[acronym,toc,style=tree,nonumberlist]{glossaries}
+\usepackage[nopostdot,style=super,nonumberlist,toc]{glossaries}
 \usepackage[pdftex]{graphicx}
+\usepackage{rotating}
+\usepackage{tikz}
+\usepackage{mathtools}
 \usepackage{wrapfig}
 \usepackage{lipsum}
 \usepackage{numprint}
@@ -34,7 +38,21 @@
 \usepackage{fancyhdr}	
 \usepackage{eso-pic}	
 \usepackage{makeidx}
+\usepackage{pdfpages}
 \usepackage[toc,page]{appendix}
+\usepackage{subcaption}
+\usepackage{caption}
+\usepackage{graphicx}
+
+\usepackage{mathbbol}
+\usepackage{bbold}
+\usepackage{epigraph}
+
+\setlength\epigraphwidth{.8\textwidth}
+\setlength\epigraphrule{0pt}
+
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}%
+\DeclarePairedDelimiter\norm{\lVert}{\rVert}%
 
 % Options
 \hypersetup{
@@ -114,7 +132,7 @@
 	\parbox[b][\paperheight]{\paperwidth}{
 	\centering
 	\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{#3}}}}
-	
+
 % Caption settings (aligned left with bold name)
 \usepackage[labelfont=bf, textfont=normal,
 			justification=justified,

@@ -5,61 +5,55 @@
 
 	\pagenumbering{arabic}
 
-	\section{Student Memoirs}
+\section{Context}
 
-When I was a student I often left bits of electronic circuitry
-in my pockets, such as \newacronym{led}{LED}{light-emitting diode}\glspl{led}\index{led} and \newacronym{eeprom}{EEPROM}{electrically erasable programmable read-only memory}\index{eeprom}, which
-often ended up in the washing machine. The \glspl{led}\index{led} didn't
-fair too badly, but the \glspl{eeprom}\index{eeprom} frequently broke \cite{citRef2}. One \gls{led}, two \glspl{led} \cite{citRef1}.
+\subsection{Genetic Markers}
 
-\subsection{Symbols}
+The human genome is composed of around 3 billion nucleotides, them being A, C, T and G, adenine, cytosine, thymine and guanine respectively, with 23 pairs of chromosomes, 1 of them being the sexual chromosomes \cite{zhang2012mining}. It is known that individuals from the same population have similar \gls{DNA} than to those of different ones \cite{witherspoon2007genetic}. The small differences between the genomes can be Single Nuclear Polymorphisms, Mutations, Insertions, Deletions and Copy Number Variations, meaning that the variants mentioned are known to be responsible for most of the different phenotypes (observable characteristics) in humans \cite{international2010integrating}. Mutations are extremely rare alterations on the \gls{DNA}, Indels are, as the name indicates, insertions or deletions that may or may not occur from individual to individual and \gls{CNV}s are sections of the genome that are repeated, and the number of repetitions varies between individuals \cite{international2010integrating}.
 
-The \newglossaryentry{angstrom}{type=symbols,name={\aa}ngstr\"om,symbol={\AA},sort=angstrom, description={non-SI unit of length}}\gls{angstrom} is commonly used in structural biology,
-whereas the \newglossaryentry{ohm}{type=symbols,name=ohm,symbol={\ensuremath{\Omega}},description=unit of electrical resistance}\gls{ohm} is used in electronics \cite{citRef2,citRef3}.
-	
-	\subsubsection{Test 1}
-	
-	In Figure \ref{fig:mesh1} we can see a mesh !!!
-	
-	\begin{figure}[h]
-    		\centering
-    		\includegraphics[width=0.5\textwidth]{../images/introduction/mesh}
-    		\caption{A nice plot}
-    		\label{fig:mesh1}
-	\end{figure}
-	
-	\subsubsection{Test 2}
-	
-	Table \ref{tab:example1} is just an example and has nothing to do with \glspl{led}\index{led}. 
-	
-	\begin{table}[h]
-	    \begin{tabular} {|c|c||>{\centering}p{.9cm}|>{\centering}p{.9cm}|>{\centering}p{.9cm}|c|}
-	        \hline
-	        \emph{Truth} & \emph{Predicted} & ADA & SVM & GLM & Blended \\ \hline
-	        T & T & 512 & 463 & 423 & 472 \\ 
-	        T & F & 19  & 68  & 108 & 0   \\ 
-	        F & T & 5   & 85  & 67  & 22  \\ 
-	        F & F & 580 & 500 & 518 & 98  \\ \hline
-	    \end{tabular} \\ \vskip .5cm
-	
-	    \begin{tabular} {>{\centering}p{2.9cm}dddd}
-	        \toprule
-	        \textit{Accuracy Metric} & \textrm{ADA} & \textrm{SVM} & \textrm{GLM} & \textrm{Blended} \\ \midrule
-	        Precision & 99.0\% & 84.5\% & 86.3\% & 95.57\% \\ 
-	        Recall    & 96.4\% & 87.2\% & 79.7\% & 100.0\%  \\
-	        Accuracy  & 97.8\% & 86.3\% & 84.3\% & 96.3\% \\ \bottomrule
-	    \end{tabular} 
-	
-	    \caption{Truth Tables and Accuracy Measures for each modeling library.}
-	    \label{tab:example1}   
-	\end{table}
-	
-	\subsubsection{Test 3}
-	
-	An example of a function plot using the ``tikz'' package:
-	
+\gls{SNP}s are single nucleotide variations that occur in a specific position in the genome, typically with two alleles, and they can either be rare or common. There are around 10 million SNPs in the human genome, meaning that on average a \gls{SNP} occurs every 300 base pairs  \cite{international2010integrating}. Allele frequencies are given for the most common one, for example, if a \gls{SNP} can either be a T or a C, if T is the most common one with 0.7 allele frequency, 70\% of the population will have a T, and the rest a C \cite{bush2012genome}. Common variants are the ones with a minor allele frequency of 5\% or more, and rare variants are only present on less than 5\% of the population.
+%Allele frequencies also help when checking for homozygous and heterozygous alleles,    \textcolor{red}{Talk about homozygous and heterozygous}\\
+All of these genetic variants can be used as markers to find associations between genotypes and phenotypes, with the most commonly used for the effect being \gls{SNP}s, due to their abundance. This association can be fairly straightforward in case of single gene related traits or diseases, but not so much for more complex traits, such as the case of \gls{T2D} \cite{zhang2012mining}. 
+
+\subsection{Type 2 Diabetes and Missing Heritability}
+
+Type 2 Diabetes is a metabolic disorder caused by insulin resistance in organs, relative insulin deficiency and high blood sugar levels \cite{chatterjee2017type}. There is evidence supporting that \gls{T2D} is strongly influenced by genetic and epigenetic factors, as well as environmental ones. Throughout their lifetime, individuals with one parent who has \gls{T2D}, have a 40\% risk of developing \gls{T2D}. This risk increases to 70\%, if both of the parents have \gls{T2D} \cite{ali2013genetics,prasad2015genetics}. Studies performed with twin pairs show a lower discordance rate (one of the twins has the disease, and the other doesn't) for monozygotic twins than for dizygotic, which supports the genetic and epigenetic influence on \gls{T2D} even further \cite{willemsen2015concordance}. Furthermore, variants associated with \gls{T2D} in the European population might not be replicated in other non-European populations, and vice-versa. A higher prevalence of the disease is also seen in some populations \cite{sanghera2012type, prasad2015genetics, wang2016genetic}. However, our genetic code doesn't undertake significant alterations in only one or two generations, so this recent surge in predisposition for \gls{T2D} is also due to the gene-environment interactions. Increase of adipose tissues in human populations is the single most significant factor in this epidemic, and to model the interaction between genes and causes that lead to obesity is extremely complex. Who burns more calories at rest, who has greater exercise levels when not doing it actively, who is more willing to change a sedentary lifestyle are all examples of gene influencing behaviour, and that's what makes the gene-environment interaction so hard to include in Genome Wide Association Studies \cite{ali2013genetics}. It is also important to note that there is no formal definition for \gls{T2D}, since all the cases who do not fulfil the criteria for \gls{T1D}, \gls{LADA} and other types, are considered \gls{T2D}. It's a disease more associated with age, although it also has been reported in adolescents \cite{vijan2010type}. The question of how to clinically phenotype \gls{T2D} is very important, because it can influence its association with genotype, since providing different patterns for the same phenotype will make it harder to perform classification \cite{sanghera2012type}. 
+
+So far, for \gls{T2D}, more than 80 robust markers were found, even though they only account for 20\% of the heritability for this disease. Even more so, these markers are predominantly common, with additive effects \cite{fuchsberger2016genetic}. The hypothesis that a common disease can be caused by several common variants in the genome is not new, and several studies have already identified common alleles who play a role in certain traits or disease susceptibility \cite{yang2010common, fuchsberger2016genetic, bush2012genome, reich2001allelic}. The remaining hypothesis are that a few rare variants have big effects (common disease-rare variant), and that both common and rare variants play a part in susceptibility \cite{prasad2015genetics, sanghera2012type}. Despite the successes of GWAS in identifying markers, much of the heritability in complex diseases still remains unexplained, which leads us to the missing heritability problem.\\
+Heritability is defined as a ratio:
+\begin{equation}
+	\pi_{explained} = h^2_{known} / h^2_{all}
+\end{equation}
+, where $h^2_{known}$ is the proportion of the phenotype explained by known variants that affect it, and $h^2_{all}$ all the variants, including those who remain undiscovered. The underlying problem is that the $h^2_{all}$ might not be properly estimated, which leads to an underestimation of $\pi_{explained}$. This model also fails to consider epistasis, that can greatly inflate the apparent heritability, and it is not yet consistently detected with the current standard methods available \cite{zuk2012mystery}. It is important to acknowledge the missing heritability problem, because the reasons why it might be happening are related to how GWAS are thought-out and performed. The first reason is that common variants of low frequency (1-10\%) might not be identified because of the genotyping arrays themselves lacking useful proxies. Secondly, many common variants with very small effects can be extremely hard to identify with current sample sizes \cite{lander2011initial, huyghe2013exome}.
 
 
-\lipsum
-	
-	
+\section{Motivation}
+
+Type 2 Diabetes is one of the most common diseases encountered in the world, and the fifth leading cause of death worldwide. Data from the International Diabetes Federation has shown that, in 2011 there were 366 million people in the world living with diabetes, and that number is expected to rise to 552 million by 2030, 80\% to 90\% of the cases being of T2D \cite{sanghera2012type, prasad2015genetics}. In 2015, diabetes caused 5 million deaths worldwide, with an estimate global cost of indirect and direct treating of US\$1.31 trillion (95\% CI 1.28 - 1.36) \cite{bommer2017global}. In Portugal alone, the costs related to \gls{T2D} corresponds to 1\% of the country's \gls{GDP} \cite{da2016diabetes}.
+
+Type 2 Diabetes risk factors, regardless of ethnicity or genetic risk, are elevated fasting insulin concentrations and low insulin secretion, obesity and fat distribution, caused by poor diet, lack of physical exercise and smoking \cite{chan1994obesity,haffner1998epidemiology}. It has also been shown that changes on this behaviour at an individual level, for a more supportive environment and healthy lifestyle can greatly delay or prevent entirely Type 2 Diabetes \cite{world2016global,ley2014prevention}.
+
+The first time a whole human genome was sequenced in 2001 it cost around US\$300 million \cite{venter2001sequence}. Since then, the aim has been to reduce it to US\$1000 per genome, and so far, that goal is very close to being reached \cite{hayden20141}. In a span of a few years, the general cost of genome sequencing decreased immensely, which lead to an increase in the number of Genome Wide Association Studies performed. As such, numerous regions of Linkage Disequilibrium in the genome that are associated with certain traits or diseases were discovered, which makes possible to identify an individual's elevated risk for certain genetic diseases \cite{macarthur2016new}.
+
+Despite all the efforts, a convincing T2D risk predictor has not yet been attained \cite{wang2016genetic}. Such discovery would be a huge step in respect to personal healthcare, since from birth, doctors and patients would be more aware of certain disorder risks. By discovering more meaningful genetic markers for T2D, and by finding new ways to analyse them in the genome, it should be possible do develop a risk predictor that can be used to better inform both doctors and patients. This would hopefully lead to a much earlier prevention and monitoring of the disease, even before any physiological signs are present. \cite{lall2017personalized}
+
+
+\section{Objectives}
+
+The main goal of this thesis is to develop a Type 2 Diabetes predictor from a Single Nucleotide Polymorphisms dataset, that is able to return information of important variants that are relevant to the problem. Since only data from the Iberian Peninsula is being used, it is of extreme relevance to establish a method that can be replicated on other ethnicities. To do so, there are five essential objectives to be fulfilled:
+\begin{enumerate}
+	\item Prepare a complete dataset, with the most possible correct and corresponding variants for cases and controls, that enables an accessible investigation of said variants and makes possible the application of machine learning.
+	\item Develop a pipeline of feature engineering that can be replicated for any dataset of SNPs, without losing their biological context.
+	\item Discover novel possible markers and verify the presence and impact of already known genes that increase T2D's susceptibility.
+	\item Through the use of Machine Learning models, implement a T2D risk predictor. 
+	\item Build a model that can be further validated in future work when more data is available.
+\end{enumerate}
+
+
+\section{Structure}
+
+The chapter State of the Art, performs a quick showdown of the technologies used since the translation of \gls{DNA} to analysable files, and the most current practices when doing such analysis. It also goes further into some Machine Learning and Data Mining methods that are currently being used with great success in the most diverse areas, and how some of them are applied to \gls{GWAS}. 
+
+The third chapter, Data Preparation, describes the processes used to prepare and clean all the raw data into formats that can be used to perform Machine Learning. Successively, the Feature Engineering chapter explains the methods that are employed to find new variants, and reduce the number of available features into a smaller and more relevant subset without losing information.
+
+The fifth chapter characterizes how the Machine Learning techniques were used in this context and shows the following results. Lastly, there are the Discussion and Conclusion, where a description of the whole process is discussed, as well as advantages and disadvantages of it. Future approaches and the overall place for Machine Learning in \gls{GWAS} are also addressed.

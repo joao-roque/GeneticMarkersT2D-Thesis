@@ -29,7 +29,7 @@ chr_to_gene <- function(list_of_variants){
     
     tryCatch({
       filterlist <- list(list_of_variants[i],"protein_coding")
-      results <- getBM(attributes = c("hgnc_symbol","entrezgene", "chromosome_name", "start_position", "end_position"), 
+      results <- getBM(attributes = c("hgnc_symbol", "entrezgene", "chromosome_name", "start_position", "end_position"), 
                     filters=c("chromosomal_region","biotype"), 
                     values = filterlist, 
                     mart = ensembl)

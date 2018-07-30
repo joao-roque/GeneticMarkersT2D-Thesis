@@ -1,78 +1,18 @@
-\ifglsentryexists{led}{}%
+\ifglsentryexists{WES}{}%
 {%
-\gls@defglossaryentry{led}%
+\gls@defglossaryentry{WES}%
 {%
-name={LED},%
-sort={LED},%
-type={acronym},%
-first={light-emitting diode\glsspace (LED)},%
-firstplural={light-emitting diodes\glsspace (LEDs)},%
-text={LED},%
-plural={LEDs},%
-description={light-emitting diode},%
-descriptionplural={light-emitting diode\acrpluralsuffix },%
+name={WES},%
+sort={WES},%
+type={main},%
+first={WES},%
+firstplural={WESs},%
+text={WES},%
+plural={WESs},%
+description={Whole Exome Sequencing},%
+descriptionplural={Whole Exome Sequencing},%
 symbol={\relax },%
 symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={light-emitting diode},%
-longplural={light-emitting diodes},%
-short={LED},%
-shortplural={LEDs},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{eeprom}{}%
-{%
-\gls@defglossaryentry{eeprom}%
-{%
-name={EEPROM},%
-sort={EEPROM},%
-type={acronym},%
-first={electrically erasable programmable read-only memory\glsspace (EEPROM)},%
-firstplural={electrically erasable programmable read-only memorys\glsspace (EEPROMs)},%
-text={EEPROM},%
-plural={EEPROMs},%
-description={electrically erasable programmable read-only memory},%
-descriptionplural={electrically erasable programmable read-only memory\acrpluralsuffix },%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={electrically erasable programmable read-only memory},%
-longplural={electrically erasable programmable read-only memorys},%
-short={EEPROM},%
-shortplural={EEPROMs},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{angstrom}{}%
-{%
-\gls@defglossaryentry{angstrom}%
-{%
-name={{\aa }ngstr\"om},%
-sort={angstrom},%
-type={symbols},%
-first={{\r a}ngstr\"om},%
-firstplural={{\r a}ngstr\"oms},%
-text={{\r a}ngstr\"om},%
-plural={{\r a}ngstr\"oms},%
-description={non-SI unit of length},%
-descriptionplural={non-SI unit of length},%
-symbol={\AA },%
-symbolplural={\AA },%
 user1={},%
 user2={},%
 user3={},%
@@ -88,21 +28,771 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{ohm}{}%
+\ifglsentryexists{WGS}{}%
 {%
-\gls@defglossaryentry{ohm}%
+\gls@defglossaryentry{WGS}%
 {%
-name={ohm},%
-sort={ohm},%
-type={symbols},%
-first={ohm},%
-firstplural={ohms},%
-text={ohm},%
-plural={ohms},%
-description={unit of electrical resistance},%
-descriptionplural={unit of electrical resistance},%
-symbol={\ensuremath {\Omega }},%
-symbolplural={\ensuremath {\Omega }},%
+name={WGS},%
+sort={WGS},%
+type={main},%
+first={WGS},%
+firstplural={WGSs},%
+text={WGS},%
+plural={WGSs},%
+description={Whole Genome Sequencing},%
+descriptionplural={Whole Genome Sequencing},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{GWAS}{}%
+{%
+\gls@defglossaryentry{GWAS}%
+{%
+name={GWAS},%
+sort={GWAS},%
+type={main},%
+first={GWAS},%
+firstplural={GWASs},%
+text={GWAS},%
+plural={GWASs},%
+description={Genome Wide Association Studies},%
+descriptionplural={Genome Wide Association Studies},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{SNP}{}%
+{%
+\gls@defglossaryentry{SNP}%
+{%
+name={SNP},%
+sort={SNP},%
+type={main},%
+first={SNP},%
+firstplural={SNPs},%
+text={SNP},%
+plural={SNPs},%
+description={Single Nucleotide Polymorphism},%
+descriptionplural={Single Nucleotide Polymorphism},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{VCF}{}%
+{%
+\gls@defglossaryentry{VCF}%
+{%
+name={VCF},%
+sort={VCF},%
+type={main},%
+first={VCF},%
+firstplural={VCFs},%
+text={VCF},%
+plural={VCFs},%
+description={Variant Call Format},%
+descriptionplural={Variant Call Format},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{INDEL}{}%
+{%
+\gls@defglossaryentry{INDEL}%
+{%
+name={INDEL},%
+sort={INDEL},%
+type={main},%
+first={INDEL},%
+firstplural={INDELs},%
+text={INDEL},%
+plural={INDELs},%
+description={Insertions or Deletions in the genome},%
+descriptionplural={Insertions or Deletions in the genome},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{T2D}{}%
+{%
+\gls@defglossaryentry{T2D}%
+{%
+name={T2D},%
+sort={T2D},%
+type={main},%
+first={T2D},%
+firstplural={T2Ds},%
+text={T2D},%
+plural={T2Ds},%
+description={Type 2 Diabetes},%
+descriptionplural={Type 2 Diabetes},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{SV}{}%
+{%
+\gls@defglossaryentry{SV}%
+{%
+name={SV},%
+sort={SV},%
+type={main},%
+first={SV},%
+firstplural={SVs},%
+text={SV},%
+plural={SVs},%
+description={Structural Variants},%
+descriptionplural={Structural Variants},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{BMI}{}%
+{%
+\gls@defglossaryentry{BMI}%
+{%
+name={BMI},%
+sort={BMI},%
+type={main},%
+first={BMI},%
+firstplural={BMIs},%
+text={BMI},%
+plural={BMIs},%
+description={Body Mass Index},%
+descriptionplural={Body Mass Index},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{LD}{}%
+{%
+\gls@defglossaryentry{LD}%
+{%
+name={LD},%
+sort={LD},%
+type={main},%
+first={LD},%
+firstplural={LDs},%
+text={LD},%
+plural={LDs},%
+description={Linkage Disequilibrium},%
+descriptionplural={Linkage Disequilibrium},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{OR}{}%
+{%
+\gls@defglossaryentry{OR}%
+{%
+name={OR},%
+sort={OR},%
+type={main},%
+first={OR},%
+firstplural={ORs},%
+text={OR},%
+plural={ORs},%
+description={Odd's ratio},%
+descriptionplural={Odd's ratio},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{PCA}{}%
+{%
+\gls@defglossaryentry{PCA}%
+{%
+name={PCA},%
+sort={PCA},%
+type={main},%
+first={PCA},%
+firstplural={PCAs},%
+text={PCA},%
+plural={PCAs},%
+description={Principal Component Analysis},%
+descriptionplural={Principal Component Analysis},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{LDA}{}%
+{%
+\gls@defglossaryentry{LDA}%
+{%
+name={LDA},%
+sort={LDA},%
+type={main},%
+first={LDA},%
+firstplural={LDAs},%
+text={LDA},%
+plural={LDAs},%
+description={Linear Discriminant Analysis},%
+descriptionplural={Linear Discriminant Analysis},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{SVM}{}%
+{%
+\gls@defglossaryentry{SVM}%
+{%
+name={SVM},%
+sort={SVM},%
+type={main},%
+first={SVM},%
+firstplural={SVMs},%
+text={SVM},%
+plural={SVMs},%
+description={Support Vector Machine},%
+descriptionplural={Support Vector Machine},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{RBF}{}%
+{%
+\gls@defglossaryentry{RBF}%
+{%
+name={RBF},%
+sort={RBF},%
+type={main},%
+first={RBF},%
+firstplural={RBFs},%
+text={RBF},%
+plural={RBFs},%
+description={Radial Basis Function},%
+descriptionplural={Radial Basis Function},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{AUC}{}%
+{%
+\gls@defglossaryentry{AUC}%
+{%
+name={AUC},%
+sort={AUC},%
+type={main},%
+first={AUC},%
+firstplural={AUCs},%
+text={AUC},%
+plural={AUCs},%
+description={Area Under Curve},%
+descriptionplural={Area Under Curve},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{QTL}{}%
+{%
+\gls@defglossaryentry{QTL}%
+{%
+name={QTL},%
+sort={QTL},%
+type={main},%
+first={QTL},%
+firstplural={QTLs},%
+text={QTL},%
+plural={QTLs},%
+description={Quantitative Trait Loci},%
+descriptionplural={Quantitative Trait Loci},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{DNA}{}%
+{%
+\gls@defglossaryentry{DNA}%
+{%
+name={DNA},%
+sort={DNA},%
+type={main},%
+first={DNA},%
+firstplural={DNAs},%
+text={DNA},%
+plural={DNAs},%
+description={Deoxyribonucleic Acid},%
+descriptionplural={Deoxyribonucleic Acid},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{NGS}{}%
+{%
+\gls@defglossaryentry{NGS}%
+{%
+name={DNA},%
+sort={DNA},%
+type={main},%
+first={DNA},%
+firstplural={DNAs},%
+text={DNA},%
+plural={DNAs},%
+description={Next Generation Sequencing},%
+descriptionplural={Next Generation Sequencing},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{MDR}{}%
+{%
+\gls@defglossaryentry{MDR}%
+{%
+name={MDR},%
+sort={MDR},%
+type={main},%
+first={MDR},%
+firstplural={MDRs},%
+text={MDR},%
+plural={MDRs},%
+description={Multifactor Dimensionality Reduction},%
+descriptionplural={Multifactor Dimensionality Reduction},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{HWE}{}%
+{%
+\gls@defglossaryentry{HWE}%
+{%
+name={HWE},%
+sort={HWE},%
+type={main},%
+first={HWE},%
+firstplural={HWEs},%
+text={HWE},%
+plural={HWEs},%
+description={Hardy-Weinberg Equilibrium},%
+descriptionplural={Hardy-Weinberg Equilibrium},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{DNN}{}%
+{%
+\gls@defglossaryentry{DNN}%
+{%
+name={DNN},%
+sort={DNN},%
+type={main},%
+first={DNN},%
+firstplural={DNNs},%
+text={DNN},%
+plural={DNNs},%
+description={Deep Neural Networks},%
+descriptionplural={Deep Neural Networks},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{CNV}{}%
+{%
+\gls@defglossaryentry{CNV}%
+{%
+name={CNV},%
+sort={CNV},%
+type={main},%
+first={CNV},%
+firstplural={CNVs},%
+text={CNV},%
+plural={CNVs},%
+description={Copy Number Variation},%
+descriptionplural={Copy Number Variation},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{LADA}{}%
+{%
+\gls@defglossaryentry{LADA}%
+{%
+name={LADA},%
+sort={LADA},%
+type={main},%
+first={LADA},%
+firstplural={LADAs},%
+text={LADA},%
+plural={LADAs},%
+description={Latent Autoimmune Diabetes of Adulthood},%
+descriptionplural={Latent Autoimmune Diabetes of Adulthood},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{GDP}{}%
+{%
+\gls@defglossaryentry{GDP}%
+{%
+name={GDP},%
+sort={GDP},%
+type={main},%
+first={GDP},%
+firstplural={GDPs},%
+text={GDP},%
+plural={GDPs},%
+description={Gross Domestic Product},%
+descriptionplural={Gross Domestic Product},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{T1D}{}%
+{%
+\gls@defglossaryentry{T1D}%
+{%
+name={T1D},%
+sort={T1D},%
+type={main},%
+first={T1D},%
+firstplural={T1Ds},%
+text={T1D},%
+plural={T1Ds},%
+description={Type 1 Diabetes},%
+descriptionplural={Type 1 Diabetes},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ROC}{}%
+{%
+\gls@defglossaryentry{ROC}%
+{%
+name={ROC},%
+sort={ROC},%
+type={main},%
+first={ROC},%
+firstplural={ROCs},%
+text={ROC},%
+plural={ROCs},%
+description={Receiver Operating Characteristic},%
+descriptionplural={Receiver Operating Characteristic},%
+symbol={\relax },%
+symbolplural={\relax },%
 user1={},%
 user2={},%
 user3={},%

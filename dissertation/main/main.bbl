@@ -1,5 +1,42 @@
 \begin{thebibliography}{10}
 
+\bibitem{ali2013genetics}
+O.~Ali, ``Genetics of type 2 diabetes,'' {\em World journal of diabetes},
+  vol.~4, no.~4, p.~114, 2013.
+
+\bibitem{sanger1977dna}
+F.~Sanger, S.~Nicklen, and A.~R. Coulson, ``Dna sequencing with
+  chain-terminating inhibitors,'' {\em Proceedings of the national academy of
+  sciences}, vol.~74, no.~12, pp.~5463--5467, 1977.
+
+\bibitem{geron2017hands}
+A.~G{\'e}ron, {\em Hands-on machine learning with Scikit-Learn and TensorFlow:
+  concepts, tools, and techniques to build intelligent systems}.
+\newblock " O'Reilly Media, Inc.", 2017.
+
+\bibitem{moore2010bioinformatics}
+J.~H. Moore, F.~W. Asselbergs, and S.~M. Williams, ``Bioinformatics challenges
+  for genome-wide association studies,'' {\em Bioinformatics}, vol.~26, no.~4,
+  pp.~445--455, 2010.
+
+\bibitem{Refaeilzadeh2009}
+P.~Refaeilzadeh, L.~Tang, and H.~Liu, {\em Cross-Validation}, pp.~532--538.
+\newblock Boston, MA: Springer US, 2009.
+
+\bibitem{fawcett2006introduction}
+T.~Fawcett, ``An introduction to roc analysis,'' {\em Pattern recognition
+  letters}, vol.~27, no.~8, pp.~861--874, 2006.
+
+\bibitem{bush2012genome}
+W.~S. Bush and J.~H. Moore, ``Genome-wide association studies,'' {\em PLoS
+  computational biology}, vol.~8, no.~12, p.~e1002822, 2012.
+
+\bibitem{fuchsberger2016genetic}
+C.~Fuchsberger, J.~Flannick, T.~M. Teslovich, A.~Mahajan, V.~Agarwala, K.~J.
+  Gaulton, C.~Ma, P.~Fontanillas, L.~Moutsianas, D.~J. McCarthy, {\em et~al.},
+  ``The genetic architecture of type 2 diabetes,'' {\em Nature}, vol.~536,
+  no.~7614, pp.~41--47, 2016.
+
 \bibitem{zhang2012mining}
 X.~Zhang, S.~Huang, Z.~Zhang, and W.~Wang, ``Mining genome-wide genetic
   markers,'' {\em PLoS computational biology}, vol.~8, no.~12, p.~e1002828,
@@ -15,25 +52,13 @@ I.~H.~. Consortium {\em et~al.}, ``Integrating common and rare genetic
   variation in diverse human populations,'' {\em Nature}, vol.~467, no.~7311,
   p.~52, 2010.
 
-\bibitem{bush2012genome}
-W.~S. Bush and J.~H. Moore, ``Genome-wide association studies,'' {\em PLoS
-  computational biology}, vol.~8, no.~12, p.~e1002822, 2012.
-
-\bibitem{sanghera2012type}
-D.~K. Sanghera and P.~R. Blackett, ``Type 2 diabetes genetics: beyond gwas,''
-  {\em Journal of diabetes \& metabolism}, vol.~3, no.~198, 2012.
+\bibitem{chatterjee2017type}
+S.~Chatterjee, K.~Khunti, and M.~J. Davies, ``Type 2 diabetes,'' {\em The
+  Lancet}, vol.~389, no.~10085, pp.~2239--2251, 2017.
 
 \bibitem{prasad2015genetics}
 R.~B. Prasad and L.~Groop, ``Genetics of type 2 diabetes—pitfalls and
   possibilities,'' {\em Genes}, vol.~6, no.~1, pp.~87--123, 2015.
-
-\bibitem{vijan2010type}
-S.~Vijan, ``Type 2 diabetes,'' {\em Annals of internal medicine}, vol.~152,
-  no.~5, pp.~ITC3--1, 2010.
-
-\bibitem{ali2013genetics}
-O.~Ali, ``Genetics of type 2 diabetes,'' {\em World journal of diabetes},
-  vol.~4, no.~4, p.~114, 2013.
 
 \bibitem{willemsen2015concordance}
 G.~Willemsen, K.~J. Ward, C.~G. Bell, K.~Christensen, J.~Bowden,
@@ -43,17 +68,19 @@ G.~Willemsen, K.~J. Ward, C.~G. Bell, K.~Christensen, J.~Bowden,
   consortium,'' {\em Twin Research and Human Genetics}, vol.~18, no.~6,
   pp.~762--771, 2015.
 
+\bibitem{sanghera2012type}
+D.~K. Sanghera and P.~R. Blackett, ``Type 2 diabetes genetics: beyond gwas,''
+  {\em Journal of diabetes \& metabolism}, vol.~3, no.~198, 2012.
+
 \bibitem{wang2016genetic}
 X.~Wang, G.~Strizich, Y.~Hu, T.~Wang, R.~C. Kaplan, and Q.~Qi, ``Genetic
   markers of type 2 diabetes: Progress in genome-wide association studies and
   clinical application for risk prediction,'' {\em Journal of diabetes},
   vol.~8, no.~1, pp.~24--35, 2016.
 
-\bibitem{fuchsberger2016genetic}
-C.~Fuchsberger, J.~Flannick, T.~M. Teslovich, A.~Mahajan, V.~Agarwala, K.~J.
-  Gaulton, C.~Ma, P.~Fontanillas, L.~Moutsianas, D.~J. McCarthy, {\em et~al.},
-  ``The genetic architecture of type 2 diabetes,'' {\em Nature}, vol.~536,
-  no.~7614, pp.~41--47, 2016.
+\bibitem{vijan2010type}
+S.~Vijan, ``Type 2 diabetes,'' {\em Annals of internal medicine}, vol.~152,
+  no.~5, pp.~ITC3--1, 2010.
 
 \bibitem{yang2010common}
 J.~Yang, B.~Benyamin, B.~P. McEvoy, S.~Gordon, A.~K. Henders, D.~R. Nyholt,
@@ -82,11 +109,83 @@ J.~R. Huyghe, A.~U. Jackson, M.~P. Fogarty, M.~L. Buchkovich,
   new loci and low-frequency variants influencing insulin processing and
   secretion,'' {\em Nature genetics}, vol.~45, no.~2, p.~197, 2013.
 
-\bibitem{schmutz2004quality}
-J.~Schmutz, J.~Wheeler, J.~Grimwood, M.~Dickson, J.~Yang, C.~Caoile,
-  E.~Bajorek, S.~Black, Y.~M. Chan, M.~Denys, {\em et~al.}, ``Quality
-  assessment of the human genome sequence,'' {\em Nature}, vol.~429, no.~6990,
-  pp.~365--368, 2004.
+\bibitem{bommer2017global}
+C.~Bommer, E.~Heesemann, V.~Sagalova, J.~Manne-Goehler, R.~Atun,
+  T.~B{\"a}rnighausen, and S.~Vollmer, ``The global economic burden of diabetes
+  in adults aged 20--79 years: a cost-of-illness study,'' {\em The lancet
+  Diabetes \& endocrinology}, vol.~5, no.~6, pp.~423--430, 2017.
+
+\bibitem{da2016diabetes}
+O.~da~Diabetes, ``Diabetes: Factos e n{\'u}meros-o ano de 2015-relat{\'o}rio
+  anual do observat{\'o}rio nacional para a diabetes,'' {\em Lisboa: Sociedade
+  Portuguesa de Diabetologia}, 2016.
+
+\bibitem{chan1994obesity}
+J.~M. Chan, E.~B. Rimm, G.~A. Colditz, M.~J. Stampfer, and W.~C. Willett,
+  ``Obesity, fat distribution, and weight gain as risk factors for clinical
+  diabetes in men,'' {\em Diabetes care}, vol.~17, no.~9, pp.~961--969, 1994.
+
+\bibitem{haffner1998epidemiology}
+S.~M. Haffner, ``Epidemiology of type 2 diabetes: risk factors,'' {\em Diabetes
+  care}, vol.~21, no.~Supplement 3, pp.~C3--C6, 1998.
+
+\bibitem{world2016global}
+W.~H. Organization {\em et~al.}, {\em Global report on diabetes}.
+\newblock World Health Organization, 2016.
+
+\bibitem{ley2014prevention}
+S.~H. Ley, O.~Hamdy, V.~Mohan, and F.~B. Hu, ``Prevention and management of
+  type 2 diabetes: dietary components and nutritional strategies,'' {\em The
+  Lancet}, vol.~383, no.~9933, pp.~1999--2007, 2014.
+
+\bibitem{venter2001sequence}
+J.~C. Venter, M.~D. Adams, E.~W. Myers, P.~W. Li, R.~J. Mural, G.~G. Sutton,
+  H.~O. Smith, M.~Yandell, C.~A. Evans, R.~A. Holt, {\em et~al.}, ``The
+  sequence of the human genome,'' {\em science}, vol.~291, no.~5507,
+  pp.~1304--1351, 2001.
+
+\bibitem{hayden20141}
+E.~C. Hayden, ``Is the \$1,000 genome for real?,'' {\em Nature News}, 2014.
+
+\bibitem{macarthur2016new}
+J.~MacArthur, E.~Bowler, M.~Cerezo, L.~Gil, P.~Hall, E.~Hastings, H.~Junkins,
+  A.~McMahon, A.~Milano, J.~Morales, {\em et~al.}, ``The new nhgri-ebi catalog
+  of published genome-wide association studies (gwas catalog),'' {\em Nucleic
+  acids research}, vol.~45, no.~D1, pp.~D896--D901, 2016.
+
+\bibitem{lall2017personalized}
+K.~L{\"a}ll, R.~M{\"a}gi, A.~Morris, A.~Metspalu, and K.~Fischer,
+  ``Personalized risk prediction for type 2 diabetes: The potential of genetic
+  risk scores,'' {\em Genetics in Medicine}, vol.~19, no.~3, p.~322, 2017.
+
+\bibitem{ansorge2009next}
+W.~J. Ansorge, ``Next-generation dna sequencing techniques,'' {\em New
+  biotechnology}, vol.~25, no.~4, pp.~195--203, 2009.
+
+\bibitem{choi2009genetic}
+M.~Choi, U.~I. Scholl, W.~Ji, T.~Liu, I.~R. Tikhonova, P.~Zumbo, A.~Nayir,
+  A.~Bakkalo{\u{g}}lu, S.~{\"O}zen, S.~Sanjad, {\em et~al.}, ``Genetic
+  diagnosis by whole exome capture and massively parallel dna sequencing,''
+  {\em Proceedings of the National Academy of Sciences}, vol.~106, no.~45,
+  pp.~19096--19101, 2009.
+
+\bibitem{manolio2009finding}
+T.~A. Manolio, F.~S. Collins, N.~J. Cox, D.~B. Goldstein, L.~A. Hindorff, D.~J.
+  Hunter, M.~I. McCarthy, E.~M. Ramos, L.~R. Cardon, A.~Chakravarti, {\em
+  et~al.}, ``Finding the missing heritability of complex diseases,'' {\em
+  Nature}, vol.~461, no.~7265, p.~747, 2009.
+
+\bibitem{zook2014integrating}
+J.~M. Zook, B.~Chapman, J.~Wang, D.~Mittelman, O.~Hofmann, W.~Hide, and
+  M.~Salit, ``Integrating human sequence data sets provides a resource of
+  benchmark snp and indel genotype calls,'' {\em Nature biotechnology},
+  vol.~32, no.~3, p.~246, 2014.
+
+\bibitem{mccarthy2016reference}
+S.~McCarthy, S.~Das, W.~Kretzschmar, O.~Delaneau, A.~R. Wood, A.~Teumer, H.~M.
+  Kang, C.~Fuchsberger, P.~Danecek, K.~Sharp, {\em et~al.}, ``A reference panel
+  of 64,976 haplotypes for genotype imputation,'' {\em Nature genetics},
+  vol.~48, no.~10, p.~1279, 2016.
 
 \bibitem{scott2007genome}
 L.~J. Scott, K.~L. Mohlke, L.~L. Bonnycastle, C.~J. Willer, Y.~Li, W.~L. Duren,
@@ -99,6 +198,13 @@ L.~J. Scott, K.~L. Mohlke, L.~L. Bonnycastle, C.~J. Willer, Y.~Li, W.~L. Duren,
 M.~Slatkin, ``Linkage disequilibrium—understanding the evolutionary past and
   mapping the medical future,'' {\em Nature Reviews Genetics}, vol.~9, no.~6,
   pp.~477--485, 2008.
+
+\bibitem{pearson1900x}
+K.~Pearson, ``X. on the criterion that a given system of deviations from the
+  probable in the case of a correlated system of variables is such that it can
+  be reasonably supposed to have arisen from random sampling,'' {\em The
+  London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science},
+  vol.~50, no.~302, pp.~157--175, 1900.
 
 \bibitem{haley1992simple}
 C.~S. Haley, S.~A. Knott, {\em et~al.}, ``A simple regression method for
@@ -179,6 +285,11 @@ M.~Friedlander, A.~Dobra, H.~Massam, and L.~Briollais, ``Analyzing genome-wide
 Y.~Guan and M.~Stephens, ``Practical issues in imputation-based association
   mapping,'' {\em PLoS genetics}, vol.~4, no.~12, p.~e1000279, 2008.
 
+\bibitem{winham2013applications}
+S.~Winham, ``Applications of multifactor dimensionality reduction to
+  genome-wide data using the r package ‘mdr’,'' in {\em Genome-Wide
+  Association Studies and Genomic Prediction}, pp.~479--498, Springer, 2013.
+
 \bibitem{moore2006flexible}
 J.~H. Moore, J.~C. Gilbert, C.-T. Tsai, F.-T. Chiang, T.~Holden, N.~Barney, and
   B.~C. White, ``A flexible computational framework for detecting,
@@ -186,10 +297,23 @@ J.~H. Moore, J.~C. Gilbert, C.-T. Tsai, F.-T. Chiang, T.~Holden, N.~Barney, and
   studies of human disease susceptibility,'' {\em Journal of theoretical
   biology}, vol.~241, no.~2, pp.~252--261, 2006.
 
-\bibitem{moore2010bioinformatics}
-J.~H. Moore, F.~W. Asselbergs, and S.~M. Williams, ``Bioinformatics challenges
-  for genome-wide association studies,'' {\em Bioinformatics}, vol.~26, no.~4,
-  pp.~445--455, 2010.
+\bibitem{abraham2014fast}
+G.~Abraham and M.~Inouye, ``Fast principal component analysis of large-scale
+  genome-wide data,'' {\em PloS one}, vol.~9, no.~4, p.~e93766, 2014.
+
+\bibitem{bro2014principal}
+R.~Bro and A.~K. Smilde, ``Principal component analysis,'' {\em Analytical
+  Methods}, vol.~6, no.~9, pp.~2812--2831, 2014.
+
+\bibitem{price2006principal}
+A.~L. Price, N.~J. Patterson, R.~M. Plenge, M.~E. Weinblatt, N.~A. Shadick, and
+  D.~Reich, ``Principal components analysis corrects for stratification in
+  genome-wide association studies,'' {\em Nature genetics}, vol.~38, no.~8,
+  p.~904, 2006.
+
+\bibitem{izenman2013linear}
+A.~J. Izenman, ``Linear discriminant analysis,'' in {\em Modern multivariate
+  statistical techniques}, pp.~237--280, Springer, 2013.
 
 \bibitem{stern2009polymorphisms}
 M.~C. Stern, J.~Lin, J.~D. Figueroa, K.~T. Kelsey, A.~E. Kiltie, J.-M. Yuan,
@@ -197,6 +321,35 @@ M.~C. Stern, J.~Lin, J.~D. Figueroa, K.~T. Kelsey, A.~E. Kiltie, J.-M. Yuan,
   ``Polymorphisms in dna repair genes, smoking, and bladder cancer risk:
   findings from the international consortium of bladder cancer,'' {\em Cancer
   research}, vol.~69, no.~17, pp.~6857--6864, 2009.
+
+\bibitem{xu2003theoretical}
+S.~Xu, ``Theoretical basis of the beavis effect,'' {\em Genetics}, vol.~165,
+  no.~4, pp.~2259--2268, 2003.
+
+\bibitem{hayes2001prediction}
+B.~Hayes, M.~Goddard, {\em et~al.}, ``Prediction of total genetic value using
+  genome-wide dense marker maps,'' {\em Genetics}, vol.~157, no.~4,
+  pp.~1819--1829, 2001.
+
+\bibitem{hosking2004detection}
+L.~Hosking, S.~Lumsden, K.~Lewis, A.~Yeo, L.~McCarthy, A.~Bansal, J.~Riley,
+  I.~Purvis, and C.-F. Xu, ``Detection of genotyping errors by hardy--weinberg
+  equilibrium testing,'' {\em European Journal of Human Genetics}, vol.~12,
+  no.~5, p.~395, 2004.
+
+\bibitem{wigginton2005note}
+J.~E. Wigginton, D.~J. Cutler, and G.~R. Abecasis, ``A note on exact tests of
+  hardy-weinberg equilibrium,'' {\em The American Journal of Human Genetics},
+  vol.~76, no.~5, pp.~887--893, 2005.
+
+\bibitem{marjoram2014post}
+P.~Marjoram, A.~Zubair, and S.~Nuzhdin, ``Post-gwas: where next? more samples,
+  more snps or more biology?,'' {\em Heredity}, vol.~112, no.~1, p.~79, 2014.
+
+\bibitem{xu2009snpinfo}
+Z.~Xu and J.~A. Taylor, ``Snpinfo: integrating gwas and candidate gene
+  information into functional snp selection for genetic association studies,''
+  {\em Nucleic acids research}, vol.~37, no.~suppl\_2, pp.~W600--W605, 2009.
 
 \bibitem{nelson2013higher}
 R.~M. Nelson, M.~Kierczak, and {\"O}.~Carlborg, ``Higher order interactions:
@@ -214,6 +367,23 @@ I.~Kavakiotis, O.~Tsave, A.~Salifoglou, N.~Maglaveras, I.~Vlahavas, and
   I.~Chouvarda, ``Machine learning and data mining methods in diabetes
   research,'' {\em Computational and structural biotechnology journal},
   vol.~15, pp.~104--116, 2017.
+
+\bibitem{hearst1998support}
+M.~A. Hearst, S.~T. Dumais, E.~Osuna, J.~Platt, and B.~Scholkopf, ``Support
+  vector machines,'' {\em IEEE Intelligent Systems and their applications},
+  vol.~13, no.~4, pp.~18--28, 1998.
+
+\bibitem{quinlan1986induction}
+J.~R. Quinlan, ``Induction of decision trees,'' {\em Machine learning}, vol.~1,
+  no.~1, pp.~81--106, 1986.
+
+\bibitem{geurts2006extremely}
+P.~Geurts, D.~Ernst, and L.~Wehenkel, ``Extremely randomized trees,'' {\em
+  Machine learning}, vol.~63, no.~1, pp.~3--42, 2006.
+
+\bibitem{breiman2001random}
+L.~Breiman, ``Random forests,'' {\em Machine learning}, vol.~45, no.~1,
+  pp.~5--32, 2001.
 
 \bibitem{chen2012random}
 X.~Chen and H.~Ishwaran, ``Random forests for genomic data analysis,'' {\em
@@ -256,13 +426,17 @@ P.~Fergus, C.~C. Montanez, B.~Abdulaimma, P.~Lisboa, and C.~Chalmers,
 J.~Kim, M.~Kwak, and M.~Bajaj, ``Genetic prediction of type 2 diabetes using
   deep neural network,'' {\em Clinical genetics}, 2017.
 
-\bibitem{xu2003theoretical}
-S.~Xu, ``Theoretical basis of the beavis effect,'' {\em Genetics}, vol.~165,
-  no.~4, pp.~2259--2268, 2003.
+\bibitem{powers2011evaluation}
+D.~M. Powers, ``Evaluation: from precision, recall and f-measure to roc,
+  informedness, markedness and correlation,'' 2011.
 
-\bibitem{hayes2001prediction}
-B.~Hayes, M.~Goddard, {\em et~al.}, ``Prediction of total genetic value using
-  genome-wide dense marker maps,'' {\em Genetics}, vol.~157, no.~4,
-  pp.~1819--1829, 2001.
+\bibitem{szumilas2010explaining}
+M.~Szumilas, ``Explaining odds ratios,'' {\em Journal of the Canadian academy
+  of child and adolescent psychiatry}, vol.~19, no.~3, p.~227, 2010.
+
+\bibitem{dorani2018feature}
+F.~Dorani and T.~Hu, ``Feature selection for detecting gene-gene interactions
+  in genome-wide association studies,'' in {\em International Conference on the
+  Applications of Evolutionary Computation}, pp.~33--46, Springer, 2018.
 
 \end{thebibliography}

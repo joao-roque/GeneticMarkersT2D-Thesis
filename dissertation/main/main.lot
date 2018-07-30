@@ -1,9 +1,16 @@
-\select@language {english}
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {1.1}{\ignorespaces Truth Tables and Accuracy Measures for each modeling library.\relax }}{2}{table.caption.12}
+\babel@toc {english}{}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces Translation of the genotypes (GT) of the VCF file to standard samples by variant dataset, for SNPs with several ALT alleles. \relax }}{27}{table.caption.22}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Total count of \gls {INDEL}s found on the Gold Standard Platinum Genomes, and truth and cases dataset het/hom and TsTv ratios. The counts are much lower than the total variants because these are the ones found in the truth set.\relax }}{27}{table.caption.23}
+\contentsline {table}{\numberline {3.3}{\ignorespaces Number of samples and variants at each stage of the data processing.\relax }}{28}{table.caption.24}
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Collection of chromosome, risk allele frequency and \gls {OR} of 37 risk genes identified for \gls {T2D}. This list was adapted from "Genetics of Type 2 Diabetes" \cite {ali2013genetics}.\relax }}{32}{table.caption.26}
+\contentsline {table}{\numberline {4.2}{\ignorespaces \gls {OR} two-by-two frequency table.\relax }}{33}{table.caption.27}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Ordered list of risk genes discovered and their most related diseases according to $www.malacards.org$ , a human disease database.\relax }}{38}{table.caption.32}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Parameters for the \gls {SVM} classifier that were tested to find the most optimized one. \relax }}{44}{table.caption.34}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Parameters for the Extra Trees classifier that were tested to find the most optimized one.\relax }}{44}{table.caption.35}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

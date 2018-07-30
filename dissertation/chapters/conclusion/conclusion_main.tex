@@ -1,6 +1,32 @@
 % !TEX TS-program = pdflatex
 % !TEX encoding = UTF-8 Unicode
 
-\chapter{Conclusions} \label{chapter:conclusions}
+\chapter{Conclusion} \label{chapter:conclusions}
 
-\lipsum
+\section{Analysis Pipeline}
+
+The first problem that was dealt with in this project was the sheer size of the datasets, almost in the Terabyte order. This was a massive challenge, and required great optimization on the part of any code that handled them. Not only this, but they required very careful parsing as any bias introduced could ruin the results and the validity of any methods tested. Nevertheless, this task was successful, as proven by the quality control later performed on the dataset.
+
+At the start of this work, it wasn't decided that a pipeline was going to be developed. The first main goal intended to establish a risk predictor for \gls{T2D} and discover new genetic markers for it. However, as the project went on, it was observed that finding novel markers goes hand-in-hand with feature selection and that it really plays a big part when it comes to \gls{GWAS}. It was also noted that for many classifiers in the literature, feature selection remained largely the same of any regular \gls{GWAS}.
+
+As such, I believe the pipeline of feature engineering that was developed to be of great use when exploring any new genomics dataset, with all the advantages and disadvantages discussed earlier. Besides, any new markers that are discovered with it can then be put to a test by classifying \gls{T2D}, which gives more confidence on them. 
+
+The final risk predictor reached extremely good results, much better than expected or found in the literature. This was a bit of a surprise, and caused for many points of doubt or distrust in the process. However, at the end, most faults possible that may have happened were thought of, tested, and taken into account through all the steps, to finally achieve a healthy trust on the conclusions provided.
+
+If this pipeline can be validated on other dataset, it will show that working with gene regions is a very important approach that needs to be incorporated when performing complex diseases studies, and confirm that indeed epistasis might be the phenomenon that was missing to be accounted for to explain the missing heritability of complex diseases.
+
+\section{Future Work}
+
+The most important future work that can have the greatest impact, is the validation of this pipeline on bigger and more diverse datasets, Whole Genome data or even datasets of other diseases. Not only this, but also having more data of every patient can help forming groups or identify other points that can skew the labels. If this was possible, it could shift the way genetic datasets are interpreted, and accelerate the introduction of Artificial Intelligence use in these kinds of problems. To make this happen in the health field, the methods need to be transparent, understandable, and very clearly transmitted.
+
+The following approach that could be linked to this study, are gene expression datasets. This would include perhaps a new whole analysis and data acquisition, but could add extra validity to the results of this pipeline.   
+
+Ultimately, novel methods that insist on the same points of region analysis, non-linearity and that consider epistasis can also be developed, because as it was shown with this one, they can provide a great deal information and select a good feature space to predict complex disease risk. These pipelines can then be integrated in an ensemble, to perform risk assessment and advance the use of such algorithms in personal health.  
+
+\section{Personal Note}
+
+Since my first classes of programming in the first grade of Biomedical Engineering, I thought that I might have made a wrong decision in what comes to degree choice. However, since I was many times in contact with programming, and further along with data analysis and Machine Learning, I've in this way, and I'm so very glad that I did. 
+
+Currently, data scientists are in high demand, and very rightfully so, as their power to extract value from datasets is incredible. The same can be applied to the Life Sciences and Personal Healthcare areas, which to this day, are the ones that interest me the most. With further work for validation and trust for these methods from the medical communities, there are many great areas where an impact can be made, such as this one.
+
+Through and through, I really enjoyed putting my sweat into this endeavour, and it served to show the amazing things that are possible in the fields of Bioinformatics. It makes me very happy that in this line of work I am not bound by anything, except for a great deal of effort, and lots and lots of computing power. 

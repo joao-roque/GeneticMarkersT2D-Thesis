@@ -1,9 +1,33 @@
-\select@language {english}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces A nice plot\relax }}{1}{figure.caption.11}
+\babel@toc {english}{}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Picture of the acrylamide gel electrophoresis with the sequences read annotated on the sides. From left to right, the inhibitors used are ddGTP, ddATP, ddTTP, and araCTP. Adapted from "DNA sequencing with chain-terminating inhibitors" \cite {sanger1977dna}.\relax }}{8}{figure.caption.11}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Work flow of the Next Generation Sequencing Techniques employed by Illumina sequencers. Adapted from Illumina's images for general use.\relax }}{9}{figure.caption.12}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces De Finneti diagram of genotype frequencies. If a population follows the Hardy-Weinberg Equilibrium, their genotype frequencies distribution will follow the curved line on the plot. Free licensed image from Wikimedia Commons.\relax }}{16}{figure.caption.13}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Plot of two classes separated by the support vectors on the dashed lines, and the decision boundary on the black line at the centre. Adapted from the book "Hands on Machine Learning with Scikit-Learn and TensorFlow" \cite {geron2017hands}.\relax }}{18}{figure.caption.14}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Plot of \gls {SVM} adjusting to two features with $C=1$. Adapted from the book "Hands on Machine Learning with Scikit-Learn and TensorFlow" \cite {geron2017hands}.\relax }}{18}{figure.caption.15}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Demonstration of features transformation $x_2 = (x_1^2) $ to find non-linear relationships. Adapted from the book "Hands on Machine Learning with Scikit-Learn and TensorFlow" \cite {geron2017hands}.\relax }}{19}{figure.caption.16}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Iteration process to develop an ensemble of Decision Trees such as Random Forests or Extremely Randomized Trees classifiers. Image from "Bioinformatics challenges for genome-wide association studies" \cite {moore2010bioinformatics}.\relax }}{20}{figure.caption.17}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Regular work flow of projects that utilize computational methods in \gls {GWAS}. Image from "Bioinformatics challenges for genome-wide association studies" \cite {moore2010bioinformatics}.\relax }}{22}{figure.caption.18}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Demonstration of three-fold cross-validation. The same principle is applied to any k-fold cross-validation. Adapted from "Cross-Validation" \cite {Refaeilzadeh2009}.\relax }}{23}{figure.caption.19}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Several Machine Learning validation metrics and how to perform their calculations. Adapted from "An Introduction to ROC analysis" \cite {fawcett2006introduction}.\relax }}{23}{figure.caption.20}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Visualization of possible genotypes for the structural variants. Adapted from public domain images at $https://www.genome.gov$ .\relax }}{26}{figure.caption.21}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Visualization of high Linkage Disequilibrium regions which allow for usage of genotyped \gls {SNP}s to infer disease risk \gls {SNP} \cite {bush2012genome}.\relax }}{29}{figure.caption.25}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces List of risk genes which were attempted to be found in the dataset. Genes present in the data are red coloured, and the remainders are silver. The bigger the size of a word, the bigger it's known \gls {OR} to \gls {T2D} according to "The genetic architecture of type 2 diabetes" \cite {fuchsberger2016genetic}.\relax }}{34}{figure.caption.28}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces $-log10(p-value)$ of the D'Agostino's K-squared test for normality plotted against each variant's position in the chromosome.\relax }}{35}{figure.caption.29}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces $-log10(p-value)$ of the \textit {Pearson's} $\chi ^2$ test plotted against each variant's position in the chromosome.\relax }}{36}{figure.caption.30}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Frequency of times a feature was on the top 100 important features for each of the 1000 Extra-Trees classifiers trained. Top 50 features displayed. \relax }}{37}{figure.caption.31}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Decision Tree built with the dataset that contains all the features from the combined genes.\relax }}{39}{figure.caption.33}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Mean of F1-Scores and accuracies by classifier built with all the features (blue), only features from known risk genes (red) and top features identified in the previous analysis (silver). Results are the average of 100 trained classifiers for each situation.\relax }}{45}{figure.caption.36}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces ROC curve for the dataset with all features, with the Extra Trees Classifier.\relax }}{46}{figure.caption.37}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces ROC curve for the dataset with the known risk genes features, with the Extra Trees Classifier.\relax }}{46}{figure.caption.38}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces ROC curve for the dataset with the top fifty features, with the Extra Trees Classifier.\relax }}{47}{figure.caption.39}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces ROC curve for the dataset with all features, with the SVM Classifier.\relax }}{47}{figure.caption.40}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces ROC curve for the dataset with the known risk genes features, with the SVM Classifier.\relax }}{48}{figure.caption.41}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces ROC curve for the dataset with the top fifty features, with the Extra Trees Classifier.\relax }}{48}{figure.caption.42}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Depiction of the pipeline developed to extract important features and discover possible risk genes. On 1. the passage of variants/\gls {SNP}s to finally relevant genes is shown. On 2. it is demonstrated the passage of those genes to features extracted and on 3. the ranking of variables with Decision Trees. \relax }}{51}{figure.caption.43}
 \addvspace {10\p@ }

@@ -1,0 +1,25 @@
+Fantástico guia do fdp do glossário
+
+Vão mandando uns F5 no main enquanto vão fazendo estes passos.
+
+* Abrir include/settings.tex .
+* Adicionar o "automake" a esta linha: \usepackage[acronym,toc,style=tree,nonumberlist,automake]{glossaries}
+
+* Colocar isto antes de \begin{document}:
+
+\newglossaryentry{latex}
+{
+	name=latex,
+	description={Is a mark up language specially suited
+		for scientific documents}
+}
+
+* Colocar um \gls{latex} algures no código (e fazer F5 no main)
+
+* Isto há de gerar uns ficheiros .glo na mesma pasta do main.tex
+
+* Se não der, copiar o conteúdo do .glo para o .acr
+
+* Correr F5, podem apagar o conteudo do .acr de seguida
+
+* Agora as entradas podem ser adicionadas directamente no .glo, mas acho que têm de chamar o \gls algures no codigo senão pode não gerar (não tenho a certeza desta parte)
